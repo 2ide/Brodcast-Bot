@@ -16,7 +16,7 @@ const client = new Discord.Client()
 
 client.on("ready", () =>{
 console.log(`${client.user.username} is Online `)
-client.user.setActivity(`Brodcast Bot By ZombieX`, {type:"PLAYING"})
+client.user.setActivity(`Aiden`, {type:"PLAYING"})
 })
 
 client.on("message", message =>{
@@ -34,7 +34,7 @@ const embed = new Discord.MessageEmbed()
 .addField("● Message", `\`\`\`${args}\`\`\``, true)
 .addField("● To", `**${c}**`, true)
 .setTimestamp()
-.setFooter("Developer: DNA | ZombieX#0001")
+.setFooter("Developer: DNA | Aiden")
 message.channel.send(embed).then(m =>{
 setTimeout(function(){
 m.delete()
